@@ -32,7 +32,6 @@
     if (jumpdir) {
       //c1.y -= 20;
       c1.x += 10;
-      console.log("asf");
     } else {
 
       //c1.y += 20;
@@ -44,22 +43,7 @@
       jumpdir = 0;
     }
   }
-  //   var jumpcount = 5;
-  //   if(jumpcount>= -5)
-  //   {
-  //     temp = 1;
-  //     if(jumpcount<0)
-  //     {
-  //       temp = -1;
-  //     }
-  //     c1.y -= (Math.pow(jumpcount,2 )) * 0.5 * temp;
-  //     jumpcount -=1 ;
-  //   }
-  // }
-  // else {
-  //   jumpcount = 5;
-  //
-  // }
+  
 
   var jumpdil = 1;
 
@@ -79,20 +63,7 @@
     if (c1.y == initial_y + 100) {
       jumpdil = 0;
     }
-    // } else {
-    //   jumpdil = 0;
-    // }
-  }
-
-  /*function collision(x1,x2,y1,y2)
-  {
-    dist = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 - y1),2))
-    if (dist<2)
-    {
-      console.log("hello");
-    }
-  }*/
-
+  
   class circle {
 
     constructor(x = 650, y = 580, r = 20) {
@@ -117,14 +88,6 @@
 
 
     }
-
-    /*function draw_big_2(){
-      canvas.setColor("black");
-      canvas.setDrawMode("fill");
-      canvas.drawRectangle(400,y_ob_big_r,150,35);
-
-      canvas.drawRectangle(650,y_ob_big_r,250,35);
-    }*/
 
     draw_obstacle_big_l() {
       if (this.check1 == 1) {
